@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.checking {
+  color: #1457c5;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 3px;
+  min-height: 22px;
+}
+
+.error-box {
+  min-height: 85px;
+}
+
+.error-box h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(65px, 7vw, 100px);
+  line-height: 0.8;
+  color: #1457c5;
+  font-weight: 800;
+  letter-spacing: -5px;
+}
+
+.error-box h2 {
+  margin-top: 7px;
+  color: #17284a;
+  font-size: 18px;
+  letter-spacing: 7px;
+  font-weight: 800;
+}
+
+
+/* ================= SCENE ================= */
+
+.scene {
+  width: min(850px, 78vw);
+  margin: 0 auto;
+}
+
+.svg-scene {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+
+/* ================= FLOOR ================= */
+
+.floor {
+  fill: #3bb64a;
+}
+
+.floor-line {
+  stroke: #238b35;
+  stroke-width: 5;
+}
+
+
+/* ================= MONITOR ================= */
+
+.monitor-frame {
+  fill: #d9e2eb;
+  stroke: #17253d;
+  stroke-width: 5;
+}
+
+.screen {
+  fill: #0d1728;
+  stroke: #293d5b;
+  stroke-width: 4;
+}
+
+.screen-line {
+  stroke: #3b7cff;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.monitor-stand {
+  fill: #c6d1dc;
+  stroke: #17253d;
+  stroke-width: 4;
+}
+
+.monitor-base {
+  fill: #17253d;
+}
+
+
+/* ================= CPU ================= */
+
+.cpu-body {
+  fill: #ccd6df;
+  stroke: #17253d;
+  stroke-width: 5;
+}
+
+.cpu-front {
+  fill: #18243a;
+  stroke: #3b4f6c;
+  stroke-width: 3;
+}
+
+.cpu-slot {
+  fill: #0d1422;
+  stroke: #526680;
+  stroke-width: 2;
+}
+
+.power {
+  fill: #48ddff;
+}
+
+.cpu-light {
+  fill: #62e2ff;
+}
+
+.cpu-bottom {
+  fill: #26364f;
+}
+
+
+/* ================= CONNECTORS ================= */
+
+.connector {
+  fill: #f0a63a;
+  stroke: #17253d;
+  stroke-width: 4;
+}
+
+
+/* ================= CABLES ================= */
+
+.cable {
+  fill: none;
+  stroke: #17253d;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cable-end {
+  fill: #f0a63a;
+  stroke: #17253d;
+  stroke-width: 4;
+}
+
+
+/* ================= ROBOT ================= */
+
+.robot {
+  transform-box: fill-box;
+}
+
+.robot-head {
+  fill: #24405f;
+  stroke: #091321;
+  stroke-width: 5;
+}
+
+.robot-body {
+  fill: #1d304c;
+  stroke: #091321;
+  stroke-width: 5;
+}
+
+.robot-inner {
+  fill: #2d4568;
+  stroke: #111d30;
+  stroke-width: 3;
+}
+
+.antenna {
+  stroke: #17253d;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.antenna-light {
+  fill: #45d9ff;
+  stroke: #17253d;
+  stroke-width: 3;
+}
+
+.normal-eye {
+  fill: #4be6ff;
+}
+
+.red-eye {
+  fill: #ff2020;
+}
+
+.mouth {
+  fill: #101b2c;
+}
+
+.arm {
+  stroke: #16283f;
+  stroke-width: 9;
+  stroke-linecap: round;
+}
+
+.hand {
+  fill: #edf3f7;
+  stroke: #15243b;
+  stroke-width: 4;
+}
+
+.leg {
+  stroke: #172a42;
+  stroke-width: 9;
+  stroke-linecap: round;
+}
+
+.foot {
+  fill: #101c2e;
+}
+
+
+/* ================= BOTTOM ================= */
+
+.bottom-text {
+  text-align: center;
+  padding: 0 15px 15px;
+}
+
+.bottom-text h3 {
+  color: #17284a;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.bottom-text p {
+  color: #7190bd;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.bottom-text button {
+  border: none;
+  background: #1457c5;
+  color: white;
+  padding: 9px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.bottom-text button:hover {
+  background: #0d4198;
+  transform: translateY(-2px);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+  .header {
+    padding-top: 8px;
+  }
+
+  .checking {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .error-box {
+    min-height: 70px;
+  }
+
+  .error-box h1 {
+    font-size: 65px;
+  }
+
+  .error-box h2 {
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+
+  .scene {
+    width: 92vw;
+  }
+
+  .bottom-text h3 {
+    font-size: 19px;
+  }
+
+  .bottom-text p {
+    font-size: 12px;
+  }
+}
