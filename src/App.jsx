@@ -1080,9 +1080,7 @@ function App() {
           The page you're looking for doesn't exist or has been moved.
         </p>
 
-        <button onClick={() => {
-          window.location.href = "/";
-        }}>
+        <button >
           Go Home
         </button>
       </div>
